@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5384b018d6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=PT+Sans+Narrow:wght@400;700&family=Poiret+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css"
+        integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="themes.css">
+    <script defer src="themes.js"></script>
+</head>
+
+<body class="light-mode">
+    <!-- <button class="theme-toggle" id="thee">
+        <i class="fa-solid fa-sun"></i>
+    </button> -->
+    <!-- <input type="checkbox" id="thee" class="theme-toggle"> -->
+
+    <div class="theme-toggle">
+        <span>
+            <label class="switch">
+                <input type="checkbox" id="thee" class="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </span>
+    </div>
+
+    <div class="open-nav">
+        <button class="icon" onclick="openNclose()">
+            <img class="ic" id="ham-img" src="icons8-menu.svg">
+        </button>
+    </div>
+
+    <div class="down">
+        <button class="down-arrow" onclick="jump('about')">
+            <i class="fa-solid fa-angle-down ic-d"></i>
+        </button>
+    </div>
+
+
+    <nav class="nav" id="nav" style="display: none;">
+        <ul class="ul-nav">
+            <button class="btn-nav" onclick="jump('home')">
+                <li class="li-nav">Home</li>
+            </button>
+            <button class="btn-nav" onclick="jump('about')">
+                <li class="li-nav">About</li>
+            </button>
+            <button class="btn-nav" onclick="jump('skills')">
+                <li class="li-nav">Skills</li>
+            </button>
+            <button class="btn-nav" onclick="jump('education')">
+                <li class="li-nav">Education</li>
+            </button>
+            <button class="btn-nav" onclick="jump('contacts')">
+                <li class="li-nav">Contacts</li>
+            </button>
+        </ul>
+    </nav>
+
+    <section class="landing-page" id="home">
+        
+        
+        <div class="content">
+            <div class="l-p-wrapper">
+                <div class="img-container pad l-p-left">
+                    <div class="img-background">
+                        <div class="img-bio">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="text-container pad l-p-right">
+                    <div class="text-wrapper">
+                        <h5 class="hello m-b">Hello!</h5>
+                        <h2 class="name p-b">I'M <strong class="color">KALOYAN TODOROV</strong></h1>
+                            <p class="bio-short p-b">I DO GRAPHIC AND WEB DESIGN</p>
+                        </div>
+                    </div>
+                </div>
+                
+            <section data-type="row" class="col l-p-soc">
+                <ul class="ul-footer">
+                    <a target="_blank" href="https://www.facebook.com/KociBond.YouTube/" class="facebook">
+                        <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                            height="32" viewBox="0 0 50 50">
+                            <path
+                            d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/kaloyantrv/" class="instagram">
+                        <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                        height="32" viewBox="0 0 50 50">
+                        <path
+                        d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/kaloyan-todorov-8b9715246/" class="linkein">
+                        <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                        height="32" viewBox="0 0 50 50">
+                        <path
+                        d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z">
+                    </path>
+                </svg>
+                    </a>
+                    <a target="_blank" href="https://github.com/bociKond" class="github">
+                        <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                        height="32" viewBox="0 0 50 50">
+                        <path
+                                d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z">
+                            </path>
+                        </svg>
+                    </a>
+                </ul>
+            </section>
+        </section>
+        
+        <section class="home-page p-in blur bg-color" id="about">
+            <div class="text-container-home">
+                <article class="text-wrapper-home">
+                <h1 class="wlh text-color">About Me</h1>
+            </article>
+            
+            <div class="about-wrapper">
+                <section class="bio">
+                    <p class="bg ff1 text-color">
+                        Hello! I’m Kaloyan Todorov. <br>
+                        I'm from Bulgaria<img class="bulgaria" src="bg.svg"> <br>
+                        I am passionate about UI/UX <br>
+                        design and Web Design. I am a skilled Front-end Developer and master of<br>
+                        Graphic Design tools such as Photoshop and Illustrator. <br>
+                    </p>
+                </section>
+                <section class="age">
+                    <div class="age-wrapper">
+                        <section class="left">
+                            <ul class="ul-age text-color">
+                                <li class="li-age ff3 wlh text-color">Age</li>
+                                <li class="li-age ff3 wlh text-color">Email</li>
+                                <li class="li-age ff3 wlh text-color">Phone</li>
+                                <li class="li-age ff3 wlh text-color">Address</li>
+                            </ul>
+                        </section>
+                        <section class="right">
+                            <ul class="ul-age text-color">
+                                <li class="li-age ff3 wlh text-color">18</li>
+                                <li class="li-age ff3 wlh text-color">kaloyantrv@gmail.com</li>
+                                <li class="li-age ff3 wlh text-color">+359884706626</li>
+                                <li class="li-age ff3 wlh text-color">Hristo Mihaylov 4</li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="bulgaria-img hidden" id="bg">
+        <div class="image-container">
+            <div class="text ff3 hidden">BULGARIA</div>
+        </div>
+    </section>
+
+    <section class="skills-page p-in blur bg-color2" id="skills">
+        <article class="text-wrapper-home">
+            <h1 class="wlh text-color2">Personal Skills</h1>
+        </article>
+
+        <div class="skills">
+            <div class="skills-wrapper programming">
+                <div class="html skill hidden" style="--order: 1;">
+                    <h5 class="wlh ff3">
+                        HTML
+                    </h5>
+                    <div role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="
+                        --value:95;
+                        --fg: #27AE60;
+                        ">
+                    </div>
+                </div>
+
+                <div class="css skill hidden" style="--order: 2;">
+                    <h5 class="wlh ff3">
+                        CSS
+                    </h5>
+
+                    <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="
+                        --value:85;
+                        --fg: #27AE60;
+                        ">
+                    </div>
+
+                </div>
+
+                <div class="js skill hidden" style="--order: 3;">
+                    <h5 class="wlh ff3">
+                        JavaScript
+                    </h5>
+
+                    <div role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="
+                        --value:55;
+                        --fg: #27AE60;
+                        ">
+                    </div>
+                </div>
+            </div>
+            <div class="skills-wrapper graphic">
+                <div class="html skill hidden" style="--order: 1;">
+                    <h5 class="wlh ff3">
+                        Adobe Photoshop
+                    </h5>
+                    <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="
+                        --value:95;
+                        --fg: #3498DB;
+                        ">
+                    </div>
+                </div>
+
+                <div class="css skill hidden" style="--order: 2;">
+                    <h5 class="wlh ff3">
+                        Adobe Illustrator
+                    </h5>
+
+                    <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="
+                        --value:90;
+                        --fg: #3498DB;
+                        ">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education p-in blur bg-color" id="education">
+        <article class="text-wrapper-home">
+            <h1 class="wlh text-color">Education</h1>
+        </article>
+
+        <div class="wrapper-education">
+            <div class="primary">
+                <div class="card bg-color2">
+                    <img class="img-card" src="oukim.jpg">
+                    <div class="card-text">
+                        <h6 class="wlh ff3 rr text-color-card">
+                            Elementary School
+                        </h6>
+                        <p class="wlp ff1 rr text-color-card">
+                            ОУ "Св. св. Кирил и Методий"
+                        </p>
+                        <p class="wlp ff1 rr text-color-card">
+                            6 - 13
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-color2">
+                    <img class="img-card" src="pgsag.png">
+                    <div class="card-text">
+                        <h6 class="wlh ff3 rr text-color-card">
+                            High School
+                        </h6>
+                        <p class="wlp ff1 rr text-color-card">
+                            ПГСАКН "Проф. арх. Стефан Стефанов"
+                        </p>
+                        <p class="wlp ff1 rr text-color-card">
+                            14 - 18
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-color2">
+                    <img class="img-card" src="unibit.jpg">
+                    <div class="card-text">
+                        <h6 class="wlh ff3 rr text-color-card">
+                            University
+                        </h6>
+                        <p class="wlp ff1 rr text-color-card">
+                            Университет по библиотекознание и информационни технологии
+                        </p>
+                        <p class="wlp ff1 rr text-color-card">
+                            18 - present (22)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="high">
+
+            </div>
+        </div>
+
+    </section>
+    <!--  -->
+
+    <section class="contacts p-in blur" id="contacts">
+        <article class="text-wrapper-home">
+            <h1 class="wlh text-color2">Contacts</h1>
+        </article>
+        <div class="form">
+            <form action="/action_page.php" class="contacts-form">
+                <div class="wrap">
+                    <div class="col">
+                        <label class=" wlh ff2" for="name">Name:</label>
+                        <input class="p-o" type="text" id="name p-o" name="firstname" placeholder="Your name...">
+                    </div>
+                    <div class="col">
+                        <label class=" wlh ff2" for="email">Email:</label>
+                        <input class="p-o" type="text" id="email p-o" name="email" placeholder="Your email ...">
+                    </div>
+                </div>
+                <div class="col">
+                    <label class=" wlh ff2" for="textarea">Message me:</label>
+                    <textarea class="p-o" name="textarea" id="textarea" cols="30" rows="10"
+                        placeholder="Write you message here...">
+                                </textarea>
+                </div>
+                <input class="p-o" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!--  -->
+    <section class="foot" id="footer">
+        <div class="b-t-t">
+            <div class="top">
+                <button class="top-arrow" onclick="jump('home')">
+                    <i class="fa-solid fa-angle-up ic-d"></i>
+                </button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid-3">
+                <section data-type="column" class="col">
+                    <h1 class="wlh ff1 text-color2 name ft" data-type="underline">
+                        Kaloyan <br>
+                        Todorov
+                        </h6>
+                </section>
+                <section data-type="row" class="col">
+                    <ul class="ul-footer">
+                        <a target="_blank" href="https://www.facebook.com/KociBond.YouTube/" class="facebook">
+                            <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                                height="32" viewBox="0 0 50 50">
+                                <path
+                                    d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/kaloyantrv/" class="instagram">
+                            <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                                height="32" viewBox="0 0 50 50">
+                                <path
+                                    d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/kaloyan-todorov-8b9715246/"
+                            class="linkein">
+                            <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                                height="32" viewBox="0 0 50 50">
+                                <path
+                                    d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://github.com/bociKond" class="github">
+                            <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                                height="32" viewBox="0 0 50 50">
+                                <path
+                                    d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z">
+                                </path>
+                            </svg>
+                        </a>
+                    </ul>
+                </section>
+                <div class="copyright">
+                    <h4 class="cr ff2 text-color2">All rights reserved.</h4>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </div>
+</body>
+
+</html>
