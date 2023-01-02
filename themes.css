@@ -1,0 +1,149 @@
+:root {
+  --clr-1: #472d2d;
+  --clr-2: #553939;
+  --clr-3: #704f4f;
+  --clr-4: #a77979;
+  --clr-5: #fff8ea;
+  --clr-6: #dd5353;
+  --clr-7: #b73e3e;
+  --clr-8: #3eb76e;
+  --clr-9: #3eb79f;
+  --clr-10: #44b73e;
+
+  --clr-text: #434a54;
+
+  --clr-bg: #181817;
+  --clr-bg2: #282828;
+
+  --clr-black: rgb(10, 10, 10);
+  --clr-black-alpha: rgb(10, 10, 10, 0.3);
+
+  --clr-white: rgb(240, 240, 240);
+  --clr-white-alpha: rgb(240, 240, 240, 0.3);
+
+  --clr-grey: rgb(190, 190, 190);
+
+  --f-f-1: "PT Sans Narrow", sans-serif;
+  --f-f-2: "Yeseva One", cursive;
+  --f-f-3: "Poiret One", cursive;
+  --f-f-4: "Nova Mono", monospace;
+
+  --transition-e-o: all 300ms ease-out;
+  --transition-e-i: all 300ms ease-in;
+}
+
+body {
+  background: var(--clr-body-bg);
+  color: var(--clr-text);
+  transition: 1s;
+}
+
+/* ---------- */
+.bg-color {
+  background-color: var(--clr-page-bg);
+}
+.bg-color2 {
+  background-color: var(--clr-page-bg2);
+}
+.text-color {
+  color: var(--clr-text);
+}
+.text-color2 {
+  color: var(--clr-text2);
+}
+.text-color-card {
+  color: var(--clr-text-card);
+}
+/* ---------- */
+:root {
+  --clr-body-bg: hsl(0 0% 85%);
+  --clr-body-bg2: hsl(129, 9%, 10%);
+  --clr-page-bg: hsl(0 0% 100%);
+  --clr-page-bg2: hsl(0 0% 15%);
+  --clr-text: hsl(0 0% 15%);
+  --clr-text2: hsl(0 0% 100%);
+  --clr-text-card: rgb(228, 228, 228);
+  --clr-heading: hsl(0 0% 25%);
+}
+
+.dark-mode {
+  --clr-body-bg: hsl(129, 9%, 10%);
+  --clr-body-bg2: hsl(0 0% 85%);
+  --clr-page-bg: rgb(87, 120, 100);
+  --clr-page-bg2: hsl(129, 9%, 20%);
+  --clr-text: hsl(209 50% 90%);
+  --clr-text2: hsl(0 0% 100%);
+  --clr-text-card: rgb(228, 228, 228);
+  --clr-heading: hsl(209 50% 80%);
+  --clr-card: hsl(0 0% 100%);
+}
+.light-mode {
+  --clr-body-bg: hsl(0 0% 85%);
+  --clr-body-bg2: hsl(129, 9%, 10%);
+  --clr-page-bg: hsl(0 0% 100%);
+  --clr-page-bg2: hsl(0 0% 15%);
+  --clr-text: hsl(0 0% 15%);
+  --clr-text2: hsl(0 0% 100%);
+  --clr-text-card: rgb(228, 228, 228);
+  --clr-heading: hsl(0 0% 25%);
+}
+
+:root {
+  --toggle-light: hsl(230, 22%, 74%);
+  --toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* Hide default html checkbox */
+.switch input {
+  opacity: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--toggle-light);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 32px;
+  bottom: 5px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(90grad, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+input:checked + .slider:before {
+  transform: translateX(-24px);
+}
+.slider,
+.round {
+  border-radius: 34px;
+}
+
+.round::before {
+  border-radius: 50%;
+}
+
+input:checked + .round::before {
+  background-color: hsl(230, 17%, 14%);
+}

@@ -1,0 +1,240 @@
+:root{
+    --clr-1: #472D2D;
+    --clr-2: #553939;
+    --clr-3: #704F4F;
+    --clr-4: #A77979;
+    --clr-5: #FFF8EA;
+    --clr-6: #DD5353;
+    --clr-7: #B73E3E;
+    --clr-8: #3eb76e;
+    --clr-9: #3eb79f;
+    --clr-10: #44b73e;
+  
+    --clr-bg: #181816;
+  
+    --clr-black: rgb(10,10,10);
+    --clr-black-alpha: rgb(10,10,10,.3);
+  
+    --clr-white: rgb(240,240,240);
+    --clr-white-alpha: rgb(240,240,240,.3);
+  
+    --f-f-1: 'PT Sans Narrow', sans-serif;
+    --f-f-2: 'Yeseva One', cursive;
+    --f-f-3: 'Poiret One', cursive;
+  
+    --transition-e-o: all 300ms ease-out;
+    --transition-e-i: all 300ms ease-in;
+}
+
+/* phones */
+@media (max-width:30rem) {
+    :root{
+        font-size: 15px;
+    }
+    .landing-page{
+        contain:content;
+    }
+    .l-p-wrapper{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 0;
+
+        flex-direction: column;
+    }
+
+    .img-background{
+        transform: scale(.7);
+    }
+
+    .text-container{
+        position: absolute;
+        top: 0;
+    }
+
+    .text-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        width: 100%;
+    }
+
+    #nav{
+        width: 100%;
+    }
+
+    .grid-3{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section[data-type="column"]{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    .ul-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+        list-style: none;
+    }
+
+    .clock{
+        display: none;
+    }
+    
+    .about-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contacts-form{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .p-in{
+        width: 100%;
+    }
+
+    .ul-age{
+        padding: 2rem .4rem;
+    }
+
+    .primary{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .card{
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, .4);
+        max-width: 90vw;
+        min-height: 20vh;
+        
+        border-radius: 1rem;
+      }
+}
+
+/* tablets */
+@media (min-width: 30.063rem) and (max-width: 51.25rem){
+    .landing-page{
+        contain:content;
+    }
+    .l-p-wrapper{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 0;
+
+        flex-direction: column;
+    }
+
+    .img-background{
+        transform: scale(.7);
+    }
+
+    .text-container{
+        position: absolute;
+        top: 0;
+    }
+
+    .text-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        width: 100%;
+    }
+
+    #nav{
+        width: 100%;
+    }
+
+    .grid-3{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section[data-type="column"]{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    .ul-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+        list-style: none;
+    }
+
+    .clock{
+        display: none;
+    }
+
+    .about-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .p-in{
+        width: 90%;
+    }
+
+    .primary{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .card{
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, .4);
+        max-width: 90vw;
+        min-height: 20vh;
+        
+        border-radius: 1rem;
+      }
+}
+
+/* laptops */
+@media (min-width: 48.063rem) and (max-width: 64rem){
+
+    .text-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        width: 100%;
+    }
+
+    .clock{
+        display: none;
+    }
+}
